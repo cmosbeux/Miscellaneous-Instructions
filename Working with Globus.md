@@ -1,4 +1,11 @@
 # Tools for working with ISMIP6 data
+
+<div style="background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+  <strong style="font-size: 1.2em;">⚠️ Warning:</strong> This page is based on 
+  <a href="https://git.smce.nasa.gov/eis-sealevel/eis-sea-level-change-general/-/blob/master/ismip6/README.md" target="_blank">ISMIP6 README</a>.
+</div>
+<br>
+        
 This directory contains instructions and code to work with datasets from the Ice Sheet Model Intercomparison Project for CMIP6 (ISMIP6). The ISMIP6 ice sheet projection datasets were used in the IPCC Assessment Report 6 (AR6) as the ice sheet component in 21st century sea-level change projections.
 
 ## Obtaining ISMIP6 datasets
