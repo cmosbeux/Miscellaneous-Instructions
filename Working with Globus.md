@@ -35,9 +35,11 @@ Here are some quick-start steps to install the Globus CLI on the SMCE JupyterHub
 
         globus endpoint search 'ISMIP6'
 
-1. List the contents of the GHub-ISMIP6-Forcing endpoint:
+1. List the contents of the GHub-ISMIP6-2300 endpoint:
 
-        globus ls 'ad1a6ed8-4de0-4490-93a9-8258931766c7:/'
+        globus ls '3881e705-3290-4e81-8990-0ef8cfb54d74:/'
+
+   For example, you will find `IGE_ElmerIce` directory containing IGE simulation outputs.
 
 ### Install Globus Personal Connect
 This is needed to establish the SMCE JupyterHub as a Globus endpoint. From a terminal:
@@ -63,9 +65,11 @@ This is needed to establish the SMCE JupyterHub as a Globus endpoint. From a ter
 
         globus transfer 'ad1a6ed8-4de0-4490-93a9-8258931766c7:/GrIS/Ocean_Forcing/README_GrIS_Ocean_Forcing.txt' `globus endpoint local-id`:./README_GrIS_Ocean_Forcing.txt
 
-1. To download the entire colllection `ISMIP6-2300`, it seems that the following command works:
+1. To download the a directory in the colllection `ISMIP6-2300`, it seems that the following command works.
 
-        globus transfer '3881e705-3290-4e81-8990-0ef8cfb54d74:/*' `globus endpoint local-id`:./bettik/test-globus/
+        globus transfer '3881e705-3290-4e81-8990-0ef8cfb54d74:/IGE_ElmerIce/' `globus endpoint local-id`:./IGE_ElmerIce
+
+   However, there should be a way to download all the directories at once
 
 1. To check the list of all tasks, use: ```globus task list```
 1. To check the status of that transfer task, use: ```globus task show <task ID that is output by the transfer command>```
