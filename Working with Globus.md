@@ -49,10 +49,12 @@ This is needed to establish the SMCE JupyterHub as a Globus endpoint. From a ter
         wget https://downloads.globus.org/globus-connect-personal/linux/stable/globusconnectpersonal-latest.tgz
         tar xzf globusconnectpersonal-latest.tgz
    
-1. Enter into the new directory and run`globusconnectpersonal`
+1. Enter into the new directory and run `globusconnectpersonal`
+   
         cd globusconnectpersonal-latest
    
 1. And run:
+   
         ./globusconnectpersonal 
 
 1. Add ```globusconnectpersonal-3.1.6/``` to the ```$PATH```. For example:
